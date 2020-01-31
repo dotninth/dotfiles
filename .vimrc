@@ -1,5 +1,3 @@
-"" New shit will be here
-
 set nocompatible
 filetype plugin indent on
 syntax on
