@@ -1,9 +1,9 @@
 <div align="center">
   <a href="https://github.com/dotninth#gh-light-mode-only">
-      <img src="./.github/assets/logo-light.png" alt="dotfiles Logo">
+      <img src="./.github/assets/dotfiles-logo-light.svg" alt="dotfiles Logo">
   </a>
   <a href="https://github.com/dotninth#gh-dark-mode-only">
-      <img src="./.github/assets/logo-dark.png" alt="dotfiles Logo">
+      <img src="./.github/assets/dotfiles-logo-dark.svg" alt="dotfiles Logo">
   </a>
 </div>
 
