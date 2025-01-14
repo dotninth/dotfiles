@@ -10,7 +10,7 @@
 <br />
 
 <p align="center">
- This is repository contains the dotfiles for my personal setup.
+ <i>This is repository contains the dotfiles for <a href="https://github.com/dotninth">my</a> personal setup.</i>
 </p>
 
 <br />
@@ -22,6 +22,8 @@ I'm trying to move from **"configure everything"** to **"configure as little as 
 I don't use **tmux**, but I use **Ghostty**'s built-in panels and set up keybindings the way most people set up tmux.
 
 This setup is highly opionated. That's because it's mine and it's made specifically for me.
+
+Oh, and I dailydrive Fedora Linux...
 
 > [!IMPORTANT]
 > I do not recommend using this dotfiles as is, but use it as inspiration for your own. You can try it though.
