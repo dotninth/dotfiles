@@ -1,0 +1,65 @@
+theme = "dracula"
+
+[editor]
+bufferline = "always"
+cursorline = true
+true-color = true
+rulers = [120]
+line-number="relative"
+mouse = true
+auto-format = true
+default-line-ending = "lf"
+auto-save = true
+gutters = ["diagnostics", "spacer", "diff"]
+idle-timeout = 500
+completion-timeout = 500
+preview-completion-insert = true
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = false
+# display-inlay-hints = true
+snippets = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
+
+[editor.indent-guides]
+render = true
+character = "╎"
+skip-levels = 1
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25
+max-indent-retain = 0
+wrap-indicator = ""
+
+[keys.normal]
+g = { a = "code_action" }
+X = ["extend_line_up", "extend_to_line_bounds"]
+A-x = ["extend_line_down", "extend_to_line_bounds"]
+
+[keys.select]
+X = ["extend_line_up", "extend_to_line_bounds"]
+A-x = ["extend_line_down", "extend_to_line_bounds"]
+
+[keys.insert]
+j = { j = "normal_mode" }
+A-h = "move_char_left"
+A-l = "move_char_right"
+A-j = "move_line_down"
+A-k = "move_line_up"

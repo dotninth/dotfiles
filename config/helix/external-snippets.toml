@@ -1,0 +1,15 @@
+[[sources]]
+name = "friendly-snippets"
+git = "https://github.com/rafamadriz/friendly-snippets.git"
+
+[[sources.paths]]
+scope = ["ruby"]
+path = "snippets/ruby"
+
+[[sources.paths]]
+scope = ["php"]
+path = "snippets/php"
+
+[[sources.paths]]
+scope = ["blade"]
+path = "snippets/frameworks/blade"

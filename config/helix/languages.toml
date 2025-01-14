@@ -1,0 +1,101 @@
+## General completion language server ##
+
+[language-server.scls]
+command = "simple-completion-language-server"
+
+[language-server.scls.config]
+max_completion_items = 20
+snippets_first = true
+feature_words = true
+feature_snippets = true
+feature_unicode_input = true
+feature_paths = true
+
+[language-server.scls.environment]
+RUST_LOG = "info,simple-completion-language-server=info"
+LOG_FILE = "/tmp/completion.log"
+
+[language-server.hxgpt]
+command = "helix-gpt"
+
+
+
+## Ruby ##
+
+[[language]]
+name = "ruby"
+language-servers = [
+  { name = "solargraph", except-features = ["format"] },
+  { name = "scls" },
+  { name = "hxgpt" }
+]
+formatter = { command = "standardrb", args = ["foo.rb", "--fix", "--stderr"] }
+auto-format = true
+indent = { tab-width = 2, unit = " " } 
+
+
+## Front End ##
+
+[[language]]
+name = "html"
+language-servers = [ "hxgpt", "vscode-html-language-server", "tailwindcss-ls" ]
+formatter = { command = 'prettier', args = ["--parser", "html"] }
+auto-format = true
+indent = { tab-width = 4, unit = " " } 
+
+[[language]]
+name = "css"
+language-servers = [ "hxgpt", "vscode-css-language-server", "tailwindcss-ls" ]
+formatter = { command = 'prettier', args = ["--parser", "css"] }
+auto-format = true
+indent = { tab-width = 2, unit = " " } 
+
+[[language]]
+name = "javascript"
+language-servers = [ "hxgpt", "typescript-language-server"]
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+auto-format = true
+indent = { tab-width = 2, unit = " " } 
+
+
+
+## PHP & Laravel ##
+
+[language-server.phpactor]
+command = "phpactor"
+args = [ "language-server" ]
+
+[[language]]
+name = "php"
+language-servers = [ "hxgpt", "phpactor", "scls" ]
+formatter = { command = "hxpint.sh", args = ["--stdin"] }
+auto-format = true
+indent = { tab-width = 4, unit = " " } 
+
+# [language-server.blade-lsp]
+# command = "laravel-dev-tools"
+# args = [ "lsp" ]
+
+[[language]]
+name = "blade"
+# language-servers = [ "blade-lsp", "vscode-html-language-server", "vscode-css-language-server", "typescript-language-server", "scls", "tailwindcss-ls" ]
+language-servers = [ "hxgpt", "vscode-html-language-server", "vscode-css-language-server", "typescript-language-server", "scls", "tailwindcss-ls" ]
+# formatter = { command = "prettier", args = ["--parser", "blade"] }
+formatter = { command = "bunx", args = ["prettier", "--parser", "blade"] }
+auto-format = true
+indent = { tab-width = 4, unit = " " } 
+
+
+
+## Utils and writing ##
+
+[[language]]
+name = "markdown"
+language-servers = [ "hxgpt", "marksman" ]
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
+auto-format = true
+indent = { tab-width = 2, unit = " " } 
+
+[[language]]
+name = "git-commit"
+language-servers = [ "scls" ]
