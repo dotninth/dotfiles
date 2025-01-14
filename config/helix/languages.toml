@@ -98,4 +98,4 @@ indent = { tab-width = 2, unit = " " }
 
 [[language]]
 name = "git-commit"
-language-servers = [ "scls" ]
+language-servers = [ "hxgpt", "scls" ]
