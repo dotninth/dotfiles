@@ -1,0 +1,54 @@
+theme = Dracula
+font-family = "VictorMono Nerd Font Mono"
+font-style = bold
+font-style-italic = false
+font-size = 10
+window-padding-x = 6
+window-padding-y = 6
+adjust-cell-height = 25%
+
+shell-integration = zsh
+window-decoration = false
+gtk-tabs-location = bottom
+
+# custom-shader = "/home/ninth/.config/ghostty/shaders/crt-shader-with-chromatic-aberration-glow-scanlines-dot-matrix.glsl"
+# custom-shader = "/home/ninth/.config/ghostty/shaders/bloom.glsl"
+# custom-shader = "/home/ninth/.config/ghostty/shaders/just-snow.glsl"
+# custom-shader = "/home/ninth/.config/ghostty/shaders/glow-rgbsplit-twitchy.glsl"
+
+mouse-hide-while-typing = true
+window-padding-balance = true
+
+keybind = ctrl+space>x=close_surface
+
+keybind = ctrl+space>n=new_window
+
+keybind = ctrl+space>c=new_tab
+keybind = ctrl+space>n=next_tab
+keybind = ctrl+space>p=previous_tab
+keybind = ctrl+space>shift+p=move_tab:-1
+keybind = ctrl+space>shift+n=move_tab:1
+
+keybind = ctrl+space>1=goto_tab:1
+keybind = ctrl+space>2=goto_tab:2
+keybind = ctrl+space>3=goto_tab:3
+keybind = ctrl+space>4=goto_tab:4
+keybind = ctrl+space>5=goto_tab:5
+keybind = ctrl+space>6=goto_tab:6
+keybind = ctrl+space>7=goto_tab:7
+keybind = ctrl+space>8=goto_tab:8
+keybind = ctrl+space>9=goto_tab:9
+
+keybind = ctrl+space>shift+\=new_split:right
+keybind = ctrl+space>-=new_split:down
+
+keybind = ctrl+space>j=goto_split:bottom
+keybind = ctrl+space>k=goto_split:top
+keybind = ctrl+space>h=goto_split:left
+keybind = ctrl+space>l=goto_split:right
+
+keybind = ctrl+space>z=toggle_split_zoom
+
+keybind = ctrl+space>e=equalize_splits
+
+copy-on-select = clipboard
