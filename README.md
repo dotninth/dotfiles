@@ -39,6 +39,7 @@ Oh, and I dailydrive Fedora Linux...
 - ghostty 
 - fzf
 - zoxide
+- yazi
 
 > [!NOTE]
 > Ghostty is the default terminal, but config for Alacritty is available in the repo.
